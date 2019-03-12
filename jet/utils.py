@@ -267,7 +267,7 @@ def get_original_menu_items(context):
     else:
         pinned_apps = []
 
-    original_app_list = get_app_list(context)
+    original_app_list = get_app_list(context, False)
 
     return map(lambda app: {
         'app_label': app['app_label'],
